@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fmri_mapping"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "This repository contains the tools used for analyse the fMRI pipeline"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Anonymous", email = "Anonymous@example.com" }]
+maintainers = [{ name = "Anonymous", email = "Anonymous@example.com" }]
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "datasets",
+    "dmf-utils[alerts]",
+    "Pillow",
+    "nibabel",
+    "pandas",
+    "seaborn>=0.13",
+    "lazy_loader",
+    "mvlearn",
+    "scikit-learn",
+    "h5py",
+    "hcp_utils",
+    "wandb",
+    "sentence-transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
