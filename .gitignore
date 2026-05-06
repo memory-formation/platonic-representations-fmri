@@ -243,3 +243,5 @@ processed_data/
 *.zip
 
 *.pt
+
+!assets/overview.png

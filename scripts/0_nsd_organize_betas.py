@@ -104,7 +104,7 @@ def main(folder):
 
 if __name__ == "__main__":
 
-    folder = "/mnt/tecla/Datasets/nsd/betas_Kastner2015"
+    folder = "<path_to_datasets>/Datasets/nsd/betas_Kastner2015"
     folder = Path(folder)
     folder.mkdir(exist_ok=True)
 
