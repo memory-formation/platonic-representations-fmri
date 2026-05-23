@@ -1,5 +1,9 @@
 # Platonic Representations in the Human Brain: Unsupervised Recovery of Universal Geometry
 
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.20496-b31b1b.svg)](https://arxiv.org/abs/2605.20496v1)
+
+
 The Strong Platonic Representation Hypothesis suggests that representational convergence in artificial neural networks can be harnessed constructively: embeddings can be translated across models through a universal latent space without paired data. We ask whether an analogous geometry can be recovered across human brains. Using fMRI data from the Natural Scenes Dataset, we propose a self-supervised encoder that learns subject-specific embeddings from brain data alone by exploiting repeated stimulus presentations. We show that these independently learned spaces can be translated across subjects using unsupervised orthogonal rotations, without paired cross-subject samples or intermediate model representations. Synchronizing pairwise rotations into a single shared latent space further improves cross-subject retrieval, indicating that subject-specific spaces are mutually compatible with a common coordinate system. These results provide evidence for a shared neural geometry in the human visual cortex: subject-specific fMRI representations are approximately isometric across individuals and can be translated through purely geometric transformations.
 
 
@@ -64,6 +68,8 @@ Runs the mini-vec2vec-based unsupervised translation procedure to estimate pairw
 
 [`notebooks/1_pairwise_and_global_alignment.ipynb`](notebooks/1_pairwise_and_global_alignment.ipynb)
 
+
+
 Loads the pairwise rotations, evaluates pairwise translation, and performs orthogonal synchronization to recover one transformation per subject into a shared latent space.
 
 ---
@@ -75,3 +81,19 @@ Loads the pairwise rotations, evaluates pairwise translation, and performs ortho
 - Scripts save intermediate `.pt` files that are used by later stages of the pipeline.
 
 - The default script parameters correspond to the main experiments reported in the paper unless otherwise specified.
+
+
+
+## Cite
+
+```
+@misc{marcosmanchon2026platonic,
+      title={Platonic Representations in the Human Brain: Unsupervised Recovery of Universal Geometry}, 
+      author={Pablo Marcos-Manchón and Rishi Jha and Lluís Fuentemilla},
+      year={2026},
+      eprint={2605.20496},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.NC},
+      url={https://arxiv.org/abs/2605.20496}, 
+}
+```
